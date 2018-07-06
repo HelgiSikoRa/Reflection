@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 public class Reflection {
 
-    void printAnnotationValue(Object object, int[] intArgs, String[] stringArgs) {
+    void callMethodAtRuntimeUsingReflection(Object object, int[] intArgs, String[] stringArgs) {
         Class classInstance = object.getClass();
         try {
             Method method = classInstance.getMethod("myMethod", String.class, int[].class);
